@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="UKR Service Desk - Full-stack university IT support platform built with React, ASP.NET Core, PostgreSQL, and JWT authentication."
+  />
+
+  <title>UKR Service Desk | Full-Stack Project</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="logo" href="#home">
+        UKR Service Desk
+      </a>
+
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#application">Application</a>
+        <a href="#demo">Demo</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#features">Engineering</a>
+        <a href="#technology">Technology</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+
+      <p class="eyebrow">
+        FULL-STACK SOFTWARE ENGINEERING PROJECT
+      </p>
+
+      <h1>UKR Service Desk</h1>
+
+      <h2>
+        A Full-Stack University IT Support Platform
+      </h2>
+
+      <p class="hero-description">
+        A secure service desk application that allows
+        users to submit and track IT support requests
+        while administrators manage tickets,
+        technicians, priorities, and resolutions.
+      </p>
+
+      <div class="tech-line">
+        React
+        <span>•</span>
+        ASP.NET Core
+        <span>•</span>
+        PostgreSQL
+        <span>•</span>
+        Entity Framework Core
+        <span>•</span>
+        JWT
+      </div>
+
+      <div class="hero-buttons">
+        <a
+          class="button primary-button"
+          href="#application"
+        >
+          Explore Project
+        </a>
+
+        <a
+          class="button secondary-button"
+          href="https://github.com/KavyaRaoM/ukr-service-desk.git"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View GitHub
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- Overview -->
+    <section class="section" id="overview">
+      <div class="section-container">
+
+        <p class="section-label">PROJECT OVERVIEW</p>
+
+        <h2>
+          From support request to resolution
+        </h2>
+
+        <p class="section-intro">
+          UKR Service Desk is a full-stack application
+          designed around a university IT support
+          workflow. It combines a React interface with
+          an ASP.NET Core Web API, PostgreSQL database,
+          and secure role-based authentication.
+        </p>
+
+        <div class="overview-grid">
+
+          <article class="overview-card">
+            <div class="card-number">01</div>
+
+            <h3>User Experience</h3>
+
+            <p>
+              Users can securely register, sign in,
+              create support tickets, and monitor the
+              status of their own requests.
+            </p>
+          </article>
+
+          <article class="overview-card">
+            <div class="card-number">02</div>
+
+            <h3>Administrator Workflow</h3>
+
+            <p>
+              Administrators can review requests from
+              all users, assign technicians, update
+              priorities, resolve tickets, and manage
+              service desk activity.
+            </p>
+          </article>
+
+          <article class="overview-card">
+            <div class="card-number">03</div>
+
+            <h3>Backend Security</h3>
+
+            <p>
+              ASP.NET Core Identity, JWT authentication,
+              role authorization, and ticket ownership
+              checks protect application resources.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Application Screenshots -->
+    <section
+      class="section alternate-section"
+      id="application"
+    >
+      <div class="section-container">
+
+        <p class="section-label">APPLICATION</p>
+
+        <h2>
+          Two experiences. One service desk.
+        </h2>
+
+        <p class="section-intro">
+          The application provides dedicated workflows
+          for university users and service desk
+          administrators.
+        </p>
+
+
+        <div class="showcase-block">
+
+          <div class="showcase-text">
+            <span class="role-badge">USER PORTAL</span>
+
+            <h3>Submit and track support requests</h3>
+
+            <p>
+              Users receive a focused dashboard for
+              creating support tickets and monitoring
+              their progress without accessing tickets
+              belonging to other users.
+            </p>
+
+            <ul>
+              <li>Create IT support tickets</li>
+              <li>Choose request priority</li>
+              <li>Track open and resolved requests</li>
+              <li>View technician assignments</li>
+            </ul>
+          </div>
+
+          <div class="screenshot-frame">
+            <img
+              src="images/user-dashboard.png"
+              alt="UKR Service Desk user dashboard"
+            />
+          </div>
+
+        </div>
+
+
+        <div class="showcase-block reverse">
+
+          <div class="showcase-text">
+            <span class="role-badge">ADMIN PORTAL</span>
+
+            <h3>Manage the complete ticket lifecycle</h3>
+
+            <p>
+              Administrators receive visibility across
+              the service desk and can manage tickets
+              from submission through resolution.
+            </p>
+
+            <ul>
+              <li>View tickets from all users</li>
+              <li>Assign support technicians</li>
+              <li>Change ticket priority</li>
+              <li>Resolve and reopen requests</li>
+              <li>Register additional administrators</li>
+            </ul>
+          </div>
+
+          <div class="screenshot-frame">
+            <img
+              src="images/admin-dashboard.png"
+              alt="UKR Service Desk administrator dashboard"
+            />
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+        <section class="section demo-section" id="demo">
+    <div class="section-container">
+
+        <p class="section-label">LIVE WORKFLOWS</p>
+
+        <h2>See the application in action</h2>
+
+        <p class="section-intro">
+        These short recordings demonstrate the main
+        user and administrator workflows in the
+        UKR Service Desk application.
+        </p>
+
+        <div class="video-grid">
+
+        <article class="video-card">
+            <video
+            controls
+            preload="metadata"
+            src="videos/user-ticket-demo.mp4"
+            ></video>
+
+            <div class="video-card-content">
+            <h3>User Ticket Workflow</h3>
+
+            <p>
+                User sign-in, ticket submission,
+                and ticket tracking.
+            </p>
+            </div>
+        </article>
+
+
+        <article class="video-card">
+            <video
+            controls
+            preload="metadata"
+            src="videos/admin-dashboard-demo.mp4"
+            ></video>
+
+            <div class="video-card-content">
+            <h3>Administrator Dashboard</h3>
+
+            <p>
+                Administrator ticket management,
+                technician assignment, priority updates,
+                and resolution workflow.
+            </p>
+            </div>
+        </article>
+
+
+        <article class="video-card">
+            <video
+            controls
+            preload="metadata"
+            src="videos/admin-registration-demo.mp4"
+            ></video>
+
+            <div class="video-card-content">
+            <h3>Administrator Registration</h3>
+
+            <p>
+                An authorized administrator creates
+                another service desk administrator.
+            </p>
+            </div>
+        </article>
+
+        </div>
+
+    </div>
+    </section>
+
+
+    <!-- Architecture -->
+    <section class="section" id="architecture">
+      <div class="section-container">
+
+        <p class="section-label">ARCHITECTURE</p>
+
+        <h2>
+          Full-stack request flow
+        </h2>
+
+        <p class="section-intro">
+          Each support request moves through a layered
+          architecture from the browser to persistent
+          PostgreSQL storage.
+        </p>
+
+        <div class="architecture">
+
+          <div class="architecture-box">
+            <span>Frontend</span>
+            <strong>React</strong>
+            <small>UI & State</small>
+          </div>
+
+          <div class="architecture-arrow">→</div>
+
+          <div class="architecture-box">
+            <span>API</span>
+            <strong>ASP.NET Core</strong>
+            <small>REST Controllers</small>
+          </div>
+
+          <div class="architecture-arrow">→</div>
+
+          <div class="architecture-box">
+            <span>Business Logic</span>
+            <strong>Service Layer</strong>
+            <small>Dependency Injection</small>
+          </div>
+
+          <div class="architecture-arrow">→</div>
+
+          <div class="architecture-box">
+            <span>Data Access</span>
+            <strong>EF Core</strong>
+            <small>ORM & Migrations</small>
+          </div>
+
+          <div class="architecture-arrow">→</div>
+
+          <div class="architecture-box">
+            <span>Database</span>
+            <strong>PostgreSQL</strong>
+            <small>Persistent Storage</small>
+          </div>
+
+        </div>
+
+
+        <div class="security-strip">
+
+          <div>
+            <strong>Identity</strong>
+            <span>User management</span>
+          </div>
+
+          <div>
+            <strong>JWT</strong>
+            <span>Authentication</span>
+          </div>
+
+          <div>
+            <strong>Roles</strong>
+            <span>Authorization</span>
+          </div>
+
+          <div>
+            <strong>Ownership</strong>
+            <span>Resource protection</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Engineering Features -->
+    <section
+      class="section alternate-section"
+      id="features"
+    >
+      <div class="section-container">
+
+        <p class="section-label">
+          ENGINEERING HIGHLIGHTS
+        </p>
+
+        <h2>
+          More than a CRUD application
+        </h2>
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+            <h3>JWT Authentication</h3>
+            <p>
+              Authenticated users receive signed JWTs
+              that are validated by the ASP.NET Core
+              backend for protected requests.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Role Authorization</h3>
+            <p>
+              User and Admin roles control access to
+              privileged operations and administrator
+              API endpoints.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Ticket Ownership</h3>
+            <p>
+              Ticket ownership is derived from the
+              authenticated user's identity rather than
+              trusting IDs supplied by the client.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>REST API</h3>
+            <p>
+              ASP.NET Core controllers expose structured
+              HTTP endpoints for authentication and
+              ticket management.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>EF Core</h3>
+            <p>
+              Entity Framework Core manages relational
+              persistence, queries, relationships, and
+              database migrations.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Responsive React UI</h3>
+            <p>
+              Reusable React components, state
+              management, routing, and API integration
+              power the user experience.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Technology -->
+    <section class="section" id="technology">
+      <div class="section-container">
+
+        <p class="section-label">TECHNOLOGY</p>
+
+        <h2>Built across the full stack</h2>
+
+        <div class="technology-grid">
+
+          <div class="technology-group">
+            <h3>Frontend</h3>
+            <span>React</span>
+            <span>JavaScript</span>
+            <span>React Router</span>
+            <span>Vite</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+          </div>
+
+          <div class="technology-group">
+            <h3>Backend</h3>
+            <span>C#</span>
+            <span>ASP.NET Core</span>
+            <span>REST API</span>
+            <span>Dependency Injection</span>
+          </div>
+
+          <div class="technology-group">
+            <h3>Data</h3>
+            <span>PostgreSQL</span>
+            <span>Entity Framework Core</span>
+            <span>EF Core Migrations</span>
+          </div>
+
+          <div class="technology-group">
+            <h3>Security</h3>
+            <span>ASP.NET Identity</span>
+            <span>JWT Bearer</span>
+            <span>Role Authorization</span>
+            <span>Resource Ownership</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Closing CTA -->
+    <section class="cta-section">
+      <div class="cta-content">
+
+        <p class="section-label">PROJECT SOURCE</p>
+
+        <h2>
+          Explore the implementation
+        </h2>
+
+        <p>
+          View the complete React frontend,
+          ASP.NET Core backend, database migrations,
+          authentication flow, and API implementation
+          on GitHub.
+        </p>
+
+    
+        <a
+          class="button primary-button"
+          href="https://github.com/KavyaRaoM/ukr-service-desk.git"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Project on GitHub
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>
+      Designed & developed by
+      <strong>Kavya Rao</strong>
+    </p>
+
+    <p>
+      Full-Stack Software Engineering Project
+    </p>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

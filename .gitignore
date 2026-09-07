@@ -1,0 +1,4 @@
+.DS_Store
+
+# Keep only browser-friendly demo videos
+videos/*.mov
